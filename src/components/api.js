@@ -11,7 +11,7 @@ export function checkResponse(res){
 
 //достаем данные пользователя с сервера
 export function getProfileInfo() {
-  return fetch('https://nomoreparties.co/v1/wbc-cohort-1/users/me', {
+  return fetch('https://nomoreparties.co/v1/apf-cohort-202/users/me', {
     headers: {
       authorization: '3dd89b95-5c6a-443c-a15c-23b145a16389'
     }
@@ -21,7 +21,7 @@ export function getProfileInfo() {
 
 //достаем карточки с сервера
 export function getCards () {
- return fetch('https://nomoreparties.co/v1/wbc-cohort-1/cards', {
+ return fetch('https://nomoreparties.co/v1/apf-cohort-202/cards', {
   headers: {
     authorization: '3dd89b95-5c6a-443c-a15c-23b145a16389'
   }
@@ -31,7 +31,7 @@ export function getCards () {
 
 //отправка данных пользователя на сервер
 export function sentProfileInfo() {
-   return fetch('https://nomoreparties.co/v1/wbc-cohort-1/users/me', {
+   return fetch('https://nomoreparties.co/v1/apf-cohort-202/users/me', {
     method: 'PATCH',
     headers: {
       authorization: '625630c2-30de-42cf-a9a3-6e74c582b476',
@@ -47,7 +47,7 @@ export function sentProfileInfo() {
 
 //добавление новой карточки
 export function sentNewCard() {
-  return fetch('https://nomoreparties.co/v1/wbc-cohort-1/cards', {
+  return fetch('https://nomoreparties.co/v1/apf-cohort-202/cards', {
     method: 'POST',
     headers: {
       authorization: '625630c2-30de-42cf-a9a3-6e74c582b476',
@@ -63,7 +63,7 @@ export function sentNewCard() {
 
 //отправка нового аватара
 export function sentNewAvatar() {
-  return fetch('https://nomoreparties.co/v1/wbc-cohort-1/users/me/avatar', {
+  return fetch('https://nomoreparties.co/v1/apf-cohort-202/users/me/avatar', {
     method: 'PATCH',
     headers: {
       authorization: '625630c2-30de-42cf-a9a3-6e74c582b476',
@@ -77,7 +77,7 @@ export function sentNewAvatar() {
 };
 
 export function deleteCard (id){
-  return fetch(`https://nomoreparties.co/v1/wbc-cohort-1/cards/${id}`, {
+  return fetch(`https://nomoreparties.co/v1/apf-cohort-202/cards/${id}`, {
     method: 'DELETE',
     headers: {
       authorization: '625630c2-30de-42cf-a9a3-6e74c582b476',
@@ -89,7 +89,7 @@ export function deleteCard (id){
 
 //отправка лайка
 export function sentLike(newContentItem) {
-  return fetch(`https://nomoreparties.co/v1/wbc-cohort-1/cards/likes/${newContentItem.id}`, {
+  return fetch(`https://nomoreparties.co/v1/apf-cohort-202/cards/likes/${newContentItem.id}`, {
     method: 'PUT',
     headers: {
       authorization: '625630c2-30de-42cf-a9a3-6e74c582b476',
@@ -103,7 +103,7 @@ export function sentLike(newContentItem) {
 };
 //снятие лайка
 export function deleteLike(newContentItem) {
-  return fetch(`https://nomoreparties.co/v1/wbc-cohort-1/cards/likes/${newContentItem.id}`, {
+  return fetch(`https://nomoreparties.co/v1/apf-cohort-202/cards/likes/${newContentItem.id}`, {
     method: 'DELETE',
     headers: {
       authorization: '625630c2-30de-42cf-a9a3-6e74c582b476',
