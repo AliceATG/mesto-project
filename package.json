@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AliceATG/mesto-project.git"
+    "url": "git+https://github.com/AliceATG/YPMesto6.git"
   },
   "author": "mariasokolovaa",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AliceATG/mesto-project/issues"
+    "url": "https://github.com/AliceATG/YPMesto6/issues"
   },
-  "homepage": "https://github.com/AliceATG/mesto-project#readme",
+  "homepage": "https://github.com/AliceATG/YPMesto6/#readme",
   "devDependencies": {
     "@babel/core": "^7.18.10",
     "@babel/preset-env": "^7.18.10",
